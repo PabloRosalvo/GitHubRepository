@@ -10,11 +10,11 @@ import UIKit
 
 final class DetailsGithubViewController: UIViewController {
     
-    let viewModel: DetailsGithubViewModel
-    let navigation: UINavigationController
-    var refreshControl = UIRefreshControl()
+    private let viewModel: DetailsGithubViewModel
+    private let navigation: UINavigationController
+    private var refreshControl = UIRefreshControl()
     
-    let contentView: DetailsGithubCollectionView = {
+    private let contentView: DetailsGithubCollectionView = {
         let view = DetailsGithubCollectionView()
         view.backgroundColor = .white
         return view
@@ -43,14 +43,14 @@ final class DetailsGithubViewController: UIViewController {
         view.layer.insertSublayer(background, at: 0)
     }
 
-    func refreshToControl() {
+    private func refreshToControl() {
         refreshControl.tintColor = UIColor.white
         refreshControl.addTarget(self, action: #selector(self.refreshData), for: .valueChanged)
         contentView.collectionView.addSubview(refreshControl)
         contentView.collectionView.alwaysBounceVertical = true
     }
     
-    @objc func refreshData() {
+    @objc private func refreshData() {
         fetchDetails()
     }
     
@@ -65,7 +65,7 @@ final class DetailsGithubViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func fetchDetails() {
+    private func fetchDetails() {
         self.viewModel.fetchDetails { success in
             self.refreshControl.endRefreshing()
             if success {
@@ -77,7 +77,7 @@ final class DetailsGithubViewController: UIViewController {
         }
     }
     
-    func handleError() {
+    private func handleError() {
         self.ds.showError {
             self.fetchDetails()
         }
