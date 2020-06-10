@@ -232,6 +232,14 @@
 			path = JsonMock;
 			sourceTree = "<group>";
 		};
+		6D9742A52490A59E0075D717 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6D974266248F29000075D717 /* DetailsGithubDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		6DF92A5C248F053A00FED26A = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +299,7 @@
 		6DF92A98248F088D00FED26A /* DetailsGithub */ = {
 			isa = PBXGroup;
 			children = (
+				6D9742A52490A59E0075D717 /* DataSource */,
 				6D974290249061AA0075D717 /* Components */,
 				6D974258248F120C0075D717 /* API */,
 				6D974255248F0CF30075D717 /* Resources */,
@@ -299,7 +308,6 @@
 				6D974252248F0CCB0075D717 /* Views */,
 				6D974251248F0CC40075D717 /* ViewController */,
 				6DF92A99248F089D00FED26A /* Coordinator */,
-				6D974266248F29000075D717 /* DetailsGithubDataSource.swift */,
 			);
 			path = DetailsGithub;
 			sourceTree = "<group>";
