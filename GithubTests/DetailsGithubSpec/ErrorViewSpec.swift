@@ -17,13 +17,11 @@ final class ErrorViewSpec: QuickSpec {
         describe( "DetailsGithubSpec")  {
             var sut: ErrorViewGeneric!
             
-            
             context("when init viewController") {
                 
                 beforeEach {
                     sut = ErrorViewGeneric()
                     sut.frame = CGRect(origin: .zero, size: CGSize(width: 320, height: 600))
-//                    sut.layoutSubviews()                   
                 }
                 
                 afterEach {
@@ -31,7 +29,7 @@ final class ErrorViewSpec: QuickSpec {
                 }
                 
                 it("should contain a valid layout") {
-                    expect(sut).toEventually(recordSnapshot(), timeout: 3)
+                    expect(sut).toEventually(haveValidSnapshot(), timeout: 3)
                 }
             }
         }
