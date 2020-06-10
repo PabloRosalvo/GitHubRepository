@@ -8,8 +8,8 @@
 
 import UIKit
 
-class StyleGuide {
-    static func getGradientButton(viewToApply: UIView) -> CAGradientLayer {
+extension CAGradientLayer {
+    func getGradient(viewToApply: UIView) -> CAGradientLayer {
         let gradient = CAGradientLayer()
         
         let color1 = UIColor(red: 134.00/255.0, green: 102.0/255.0, blue: 254.0/255.0, alpha: 1.0)
@@ -23,3 +23,5 @@ class StyleGuide {
         return gradient
     }
 }
+
+

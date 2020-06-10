@@ -20,16 +20,18 @@ public class ErrorViewGeneric: UIView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .purple
         label.numberOfLines = 0
         return label
     }()
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .purple
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .purple
         label.numberOfLines = 0
         return label
     }()
@@ -38,6 +40,8 @@ public class ErrorViewGeneric: UIView {
         let button = UIButton(frame: .zero)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Tente Novamente", for: .normal)
+        button.titleColor(for: .highlighted)
+        button.setTitleColor(.purple, for: .normal)
         button.isHidden = true
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return button
@@ -61,6 +65,11 @@ public class ErrorViewGeneric: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        
+    }
+    
     @objc
     private func buttonAction() {
         reloadAction?()
@@ -79,29 +88,35 @@ extension ErrorViewGeneric {
     }
     
     func setupConstraints() {
-        NSLayoutConstraint.activate([imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                                     imageView.topAnchor.constraint(equalTo: topAnchor),
-                                     imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                                     imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.5)])
-        
-        NSLayoutConstraint.activate([titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-                                     titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30),
-                                     titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)])
-        
-        NSLayoutConstraint.activate([subtitleLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-                                     subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15),
-                                     subtitleLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor)])
-        
-        NSLayoutConstraint.activate([actionButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-                                     actionButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-                                     actionButton.heightAnchor.constraint(equalToConstant: 48),
-                                     actionButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32)])
+        self.imageView.snp.makeConstraints { make in
+            make.top.equalTo(self.snp.top).offset(60)
+            make.trailing.equalTo(self.snp.trailing).offset(-24)
+            make.leading.equalTo(self.snp.leading).offset(24)
+            make.height.equalTo(300)
+        }
+        self.titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(self.imageView.snp.bottom).offset(8)
+            make.centerX.equalTo(self.snp.centerX)
+        }
+        self.subtitleLabel.snp.makeConstraints { make in
+            make.top.equalTo(self.titleLabel.snp.bottom).offset(16)
+            make.centerX.equalTo(self.snp.centerX)
+        }
+        self.actionButton.snp.makeConstraints { make in
+            make.trailing.equalTo(self.snp.trailing).offset(-24)
+            make.leading.equalTo(self.snp.leading).offset(24)
+            make.bottom.equalTo(self.snp.bottom).offset(-48)
+            make.height.equalTo(48)
+        }
     }
     
     func configureViews() {
-        imageView.image = #imageLiteral(resourceName: "imageError")
+        imageView.image = #imageLiteral(resourceName: "splashScreen")
         titleLabel.text = "Ops, ocorreu um erro"
-        subtitleLabel.text = "Tente novamente"
-        self.backgroundColor = .white
+        subtitleLabel.text = "Verifique o seu sinal de internet :)"
+        self.backgroundColor = .systemGroupedBackground
+        actionButton.layer.borderColor = UIColor.purple.cgColor
+        actionButton.layer.borderWidth = 1
+        actionButton.layer.cornerRadius = 20
     }
 }

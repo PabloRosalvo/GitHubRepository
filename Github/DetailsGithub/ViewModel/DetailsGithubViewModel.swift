@@ -24,8 +24,8 @@ final class DetailsGithubViewModel {
     func fetchDetails(_ completion: @escaping (Bool) -> Void) {
         api.fetch { statusCode, model in
             guard let statusCode = statusCode else { return }
-            guard let model = model else { return }
             if ConnectionErrorManager.isSuccessfulStatusCode(statusCode: statusCode) {
+                guard let model = model else { return }
                 self.model = model
                 completion(true)
             } else {

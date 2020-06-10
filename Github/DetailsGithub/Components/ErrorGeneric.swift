@@ -6,6 +6,7 @@
 //  Copyright © 2020 Pablo Rosalvo de Melo Lopes. All rights reserved.
 //
 import UIKit
+import SnapKit
 
 public extension UIViewController {
     var ds: ErrorGeneric {
@@ -24,12 +25,13 @@ public class ErrorGeneric {
     public func showError(reload: (() -> Void)? = nil) {
         let errorView = ErrorViewGeneric()
         errorView.reloadAction = reload
-        errorView.translatesAutoresizingMaskIntoConstraints = false
         viewController.view.addSubview(errorView)
-        
-        NSLayoutConstraint.activate([errorView.topAnchor.constraint(equalTo: viewController.view.layoutMarginsGuide.topAnchor),
-                                     errorView.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor),
-                                     errorView.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor),
-                                     errorView.bottomAnchor.constraint(equalTo: viewController.view.bottomAnchor)])
+        errorView.snp.makeConstraints { make in
+            make.top.equalTo(viewController.view.snp.top)
+            make.leading.equalTo(viewController.view.snp.leading)
+            make.trailing.equalTo(viewController.view.snp.trailing)
+            make.bottom.equalTo(viewController.view.snp.bottom)
+
+        }
     }
 }

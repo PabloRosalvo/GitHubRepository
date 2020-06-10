@@ -38,8 +38,9 @@ final class DetailsGithubViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let gradient = StyleGuide.getGradientButton(viewToApply: view)
-        view.layer.insertSublayer(gradient, at: 0)
+        let background = CAGradientLayer().getGradient(viewToApply: view)
+        background.frame = self.view.bounds
+        view.layer.insertSublayer(background, at: 0)
     }
 
     func refreshToControl() {

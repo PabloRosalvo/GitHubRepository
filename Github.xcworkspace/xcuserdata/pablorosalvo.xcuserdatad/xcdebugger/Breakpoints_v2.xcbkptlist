@@ -3,4 +3,358 @@
    uuid = "AA52A252-F136-48C1-AD77-907CB5F3A0F4"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "112242B7-8721-428F-AEEC-5810160B9376"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/DeailsGithubApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetch(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F07E44D-E5CA-41C4-A143-0A4B378A2CAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchDetails(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C66B07B-7CE7-4412-B2B7-BF864B8D9E37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchDetails(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C66B07B-7CE7-4412-B2B7-BF864B8D9E37 - 3c5c5cdc91ab5fcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Github.DetailsGithubViewModel.fetchDetails((Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "8C66B07B-7CE7-4412-B2B7-BF864B8D9E37 - bbaf2b6a991dbb7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;Github.GitHubDetail&gt;) -&gt; () in Github.DetailsGithubViewModel.fetchDetails((Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75DEFFDD-08F2-42C8-973A-D0D268A233D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "fetchDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75DEFFDD-08F2-42C8-973A-D0D268A233D0 - b51bdc4ac4b09234"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Github.DetailsGithubViewController.fetchDetails() -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "75DEFFDD-08F2-42C8-973A-D0D268A233D0 - b0512c54d4773d17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Github.DetailsGithubViewController.fetchDetails() -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F00F6ECF-5555-4156-A3F6-178808CAEF82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "fetchDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA3F2A21-C8B3-4047-A969-8B146D14B320"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "handleError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA3F2A21-C8B3-4047-A969-8B146D14B320 - afe9684254abf6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Github.DetailsGithubViewController.handleError() -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "DA3F2A21-C8B3-4047-A969-8B146D14B320 - a269d1490976c663"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Github.DetailsGithubViewController.handleError() -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/ViewController/DetailsGithubViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F20BDDAA-B85E-4E76-986D-837448151166"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/DeailsGithubApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetch(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CACF1CE-E04D-4D6A-936D-C2B6D32EEFFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchDetails(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF7F53EC-E5F7-436B-B346-B71E96748A45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/ViewModel/DetailsGithubViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchDetails(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BA71240-48A8-45D3-B62D-5E5D810BF25E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/DeailsGithubApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetch(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BA71240-48A8-45D3-B62D-5E5D810BF25E - aaae76fbdbe08e75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Github.DeailsGithubApi.fetch(completion: (Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;Github.GitHubDetail&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/API/DeailsGithubApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  uuid = "3BA71240-48A8-45D3-B62D-5E5D810BF25E - 36620b43c7a25630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;Github.GitHubDetail&gt;) -&gt; () in Github.DeailsGithubApi.fetch(completion: (Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;Github.GitHubDetail&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Github"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pablorosalvo/Documents/Github/Github/DetailsGithub/API/DeailsGithubApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C185F8B1-5344-46D4-AE14-0D78D894F45B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/Connection/ConnetionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "request(url:method:parameters:headers:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B54FEB0-BE73-49AA-AA24-DC5065F9DD3F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/Connection/ConnetionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "request(url:method:parameters:headers:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "636A4D2A-3397-4426-B28C-3A4EDE12A505"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/Connection/ConnetionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "request(url:method:parameters:headers:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D976D6DF-D70B-4D02-8B4C-4C2EE2E1A00E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Github/DetailsGithub/API/Connection/ConnetionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "request(url:method:parameters:headers:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
